@@ -4,17 +4,34 @@ import './App.css';
 
 class App extends Component {
   render() {
+    return <Numbers/>
+  }
+}
+
+class Numbers extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      numValue: 0
+    }
+  }
+
+  render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <button>9</button>
+        <button>8</button>
+        <button>7</button>
+        <button>6</button>
+        <button>5</button>
+        <button>4</button>
+        <button>3</button>
+        <button>2</button>
+        <button>1</button>
+        <button>0</button>
       </div>
-    );
+    )
   }
 }
 
