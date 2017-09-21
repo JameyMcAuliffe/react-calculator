@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
-    return <Numbers/>
+    return (<div>
+      <Display/>
+      <Numbers/>
+    </div>)
+  }
+}
+
+class Display extends Component {
+  render() {
+    return <h3 className="display">0</h3>
   }
 }
 
@@ -13,24 +21,70 @@ class Numbers extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      numValue: 0
+      numValue: null
     }
   }
 
   render() {
     return (
-      <div>
-        <button>9</button>
-        <button>8</button>
-        <button>7</button>
-        <button>6</button>
-        <button>5</button>
-        <button>4</button>
-        <button>3</button>
-        <button>2</button>
-        <button>1</button>
-        <button>0</button>
-      </div>
+      <table className="table">
+        <tr>
+          <td>
+            <button className="button">9</button>
+          </td>
+          <td>
+            <button className="button">8</button>
+          </td>
+          <td>
+            <button className="button">7</button>
+          </td>
+          <td>
+            <button className="button">C</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button className="button">6</button>
+          </td>
+          <td>
+            <button className="button">5</button>
+          </td>
+          <td>
+            <button className="button">4</button>
+          </td>
+          <td>
+            <button className="button">*</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button className="button">3</button>
+          </td>
+          <td>
+            <button className="button">2</button>
+          </td>
+          <td>
+            <button className="button">1</button>
+          </td>
+          <td>
+            <button className="button">%</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button className="button">0</button>
+          </td>
+          <td>
+            <button className="button">+</button>
+          </td>
+          <td>
+            <button className="button">-</button>
+          </td>
+          <td>
+            <button className="button">=</button>
+          </td>
+        </tr>
+      </table>
     )
   }
 }
