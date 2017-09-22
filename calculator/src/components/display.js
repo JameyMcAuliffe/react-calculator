@@ -60,7 +60,7 @@ export class Display extends Component {
   //need to render all buttons in here
   render() {
     return (
-      <div>
+      <div className="calculator">
         <h3 className="display">{this.state.displayValue}</h3>
         <table className="table">
           <tbody>

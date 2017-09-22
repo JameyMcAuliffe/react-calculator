@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-//import { Buttons } from './components/buttons'
 import { Display } from './components/display'
 
 
