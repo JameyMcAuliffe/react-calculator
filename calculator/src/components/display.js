@@ -35,7 +35,8 @@ export class Display extends Component {
 
   clearInput() {
     this.setState({
-      displayValue: '0'
+      displayValue: '0',
+      storedValue: '0'
     })
   }
 
@@ -53,10 +54,6 @@ export class Display extends Component {
     this.setState({
       displayValue: total
     })
-    console.log("this.state.storedValue:", this.state.storedValue); 
-    console.log("this.state.operator:", this.state.operator)
-    console.log("this.state.displayValue:", this.state.displayValue);
-    console.log("total:", total);
   }
 
 
